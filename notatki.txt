@@ -1,0 +1,14 @@
+cypress.json - zawiera dane konfiguracji startowej cypresa, adres url aplikcaji, wymiar 
+        informajca ktoryhc testów nie wykonywać a kture wykonywac i w jakiej kolejniści
+Cypress
+fixtures - example.json 
+    - przechowuje stałe dane np. dane do firmulaża email i hasło
+integration - folder zawierajacy testy
+plugins - można zainstalować pluginy np. do xpatha, continuse integration, continues deployment
+support - commends.js - deklarujemy globalne komendy, z których będą korzystać testy
+
+konfiguracja cypressa do znależienia na stronie docs.cypress.io w configuration
+
+/// <reference types="cypress" />  sprawia że mamy dostęp do wszystkich metod które są dostępne w cypressie
+
+it.only - tylko ten test się bedzie wykonywał

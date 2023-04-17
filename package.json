@@ -1,0 +1,20 @@
+{
+  "name": "cypress_od_podstaw",
+  "version": "1.0.0",
+  "description": "Testy automatyczne cypress",
+  "main": "index.js",
+  "scripts": {
+    "open": "npx cypress open"
+  },
+  "keywords": [
+    "Cypress",
+    "testy",
+    "autmatyczne",
+    "kurs"
+  ],
+  "author": "Adelina",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^9.5.1"
+  }
+}
