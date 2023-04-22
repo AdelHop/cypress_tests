@@ -12,3 +12,6 @@ konfiguracja cypressa do znależienia na stronie docs.cypress.io w configuration
 /// <reference types="cypress" />  sprawia że mamy dostęp do wszystkich metod które są dostępne w cypressie
 
 it.only - tylko ten test się bedzie wykonywał
+
+Cypress zaleca korzystanie z page objec modules
+Castom komends - to takie komendy kóre mają dostęp do wszystkich testów

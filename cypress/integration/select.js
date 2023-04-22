@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+import SelectPage from "../support/page_object/selectPage";
 
 describe("E2E wybieranie opcji select", () => {
         // it("Wybieranie opcji", () => {
@@ -16,11 +17,13 @@ describe("E2E wybieranie opcji select", () => {
         it.only("wybieranie wszystkich opcji", () => {
             cy.visit("/index.php?id_category=3&controller=category")
 
-            cy.get("#selectProductSort").then(select => {
-                cy.wrap(select).find("option").each(opcja => {
-                    cy.wrap(select).select(opcja.text())
-                })
-            })
+            // cy.get("#selectProductSort").then(select => {
+            //     cy.wrap(select).find("option").each(opcja => {
+            //         cy.wrap(select).select(opcja.text())
+
+            SelectPage.selectAllOption();
         })
+       })
+})
 })
 

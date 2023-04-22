@@ -34,8 +34,13 @@ describe("E2E - Asercja", () => {
         cy.get("ul.sf-menu").find("li").should("have.length", 16)
         cy.get("ul.sf-menu").find("li").then(zakładki => {
             expect(zakładki).to.have.length(16)
-        })
+            })
 
+        //Weryfikacja wartości css danego elementu
+        cy.get("#search_query_top").should("have.css","height", "45px")
+        cy.get("#search_query_top").then(wyszukiwarka => {
+            expect(wyszukiwarka).to.have.css("height", "45px")
+        })
 })
 })
 
